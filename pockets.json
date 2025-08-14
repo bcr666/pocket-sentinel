@@ -1,0 +1,42 @@
+{
+	"PaySchedule": {
+		"NextPaycheck": "2025-08-15",
+		"PayPeriodDays": 14
+	},
+	"Pockets": [
+		{
+			"Name": "ComEd - Electric",
+			"CurrentBalance": 118.25,
+			"TransferPerPaycheck": 45.00,
+			"NextDueDate": "2025-09-10",
+			"SafetyBuffer": 20.00,
+			"Estimate": {
+				"Mode": "Median",
+				"RecentBills": [126.74, 119.38, 141.02, 132.90, 124.10],
+				"UseLastN": 3,
+				"ExtraPercent": 10.0
+			}
+		},
+		{
+			"Name": "Nicor - Gas",
+			"CurrentBalance": 64.00,
+			"TransferPerPaycheck": 30.00,
+			"NextDueDate": "2025-09-05",
+			"SafetyBuffer": 10.00,
+			"Estimate": {
+				"Mode": "Average",
+				"RecentBills": [38.40, 42.10, 36.00, 72.00],
+				"UseLastN": 4,
+				"ExtraPercent": 0.0
+			}
+		},
+		{
+			"Name": "Xfinity - Internet",
+			"CurrentBalance": 80.00,
+			"TransferPerPaycheck": 30.00,
+			"NextDueDate": "2025-08-28",
+			"SafetyBuffer": 0.00,
+			"Estimate": { "Mode": "Fixed", "FixedAmount": 90.00 }
+		}
+	]
+}
